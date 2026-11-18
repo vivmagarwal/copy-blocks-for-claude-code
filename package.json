@@ -1,0 +1,56 @@
+{
+  "name": "copy-blocks-for-claude-code",
+  "displayName": "Copy Blocks for Claude Code",
+  "description": "Copy a code block from Claude Code's terminal reply exactly as it was written, with no added line breaks. Hold Cmd or Ctrl and click the block, or use the Copy block button.",
+  "version": "0.1.0",
+  "publisher": "vivmagarwal",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0D2240",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vivmagarwal/copy-blocks-for-claude-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vivmagarwal/copy-blocks-for-claude-code/issues"
+  },
+  "homepage": "https://github.com/vivmagarwal/copy-blocks-for-claude-code#readme",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "claude code",
+    "claude",
+    "terminal",
+    "copy",
+    "code block",
+    "clipboard"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "copyBlocksForClaudeCode.copyNewest",
+        "title": "Copy newest code block",
+        "category": "Copy Blocks for Claude Code"
+      },
+      {
+        "command": "copyBlocksForClaudeCode.pick",
+        "title": "Copy a code block from a list",
+        "category": "Copy Blocks for Claude Code"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

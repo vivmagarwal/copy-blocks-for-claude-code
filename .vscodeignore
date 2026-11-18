@@ -1,0 +1,8 @@
+test/**
+images/**
+DEVELOPMENT.md
+PUBLISHING.md
+sync_public_repo.sh
+*.vsix
+.gitignore
+.vscodeignore
